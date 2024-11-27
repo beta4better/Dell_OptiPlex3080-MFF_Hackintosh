@@ -39,6 +39,10 @@ EFI 源自 [PCBETA]()，通过 OCAT 将 OC 升级到了目前的最新版本 1.0
 以上设置引用自： https://github.com/jerryhan77/dell-optiplex-7080mff-opencore
 关于修改DVMT和CFG LOCK 也可以参考上面的链接，我目前只解锁了CFG，DVMT没有动。
 
+我的EFI解锁用的是这个工具，没有自己用RU.efi：https://github.com/hackintosh-club/dell-optiplex-3080-mff/blob/master/EFI/OC/Tools/CFGLock.efi 
+
+RU.efi 工具链接： https://github.com/hackintosh-club/dell-optiplex-3080-mff/blob/master/RU.efi
+
 ## 黑苹果工具
 * https://dortania.github.io/OpenCore-Install-Guide/
 * https://github.com/dortania/OpenCore-Legacy-Patcher
@@ -48,3 +52,11 @@ EFI 源自 [PCBETA]()，通过 OCAT 将 OC 升级到了目前的最新版本 1.0
 * Hackintool：https://github.com/headkaze/Hackintool
 * USBMap：https://github.com/corpnewt/USBMap
 * OCAT: https://github.com/ic005k/OCAuxiliaryTools/
+
+
+## EFI 参考
+下面这几个EFI 感觉配置的很不错，在我的这台机器上貌似不能引导，没有仔细研究，但是有启发
+
+* https://github.com/ifantasyw/dell-3080mff-efi （含工具modGRUBShell.efi 和 VerifyMsrE2.efi）
+* https://github.com/hackintosh-club/dell-optiplex-3080-mff/blob/master/EFI/OC/Tools/CFGLock.efi （含CFG一键解锁工具）
+* https://blog.evilgaoshu.com/3080mff-hackintosh/ （中文介绍，很详细，简单明了）
