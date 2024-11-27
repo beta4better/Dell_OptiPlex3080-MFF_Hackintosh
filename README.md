@@ -12,7 +12,32 @@ EFI 源自 [PCBETA]()，通过 OCAT 将 OC 升级到了目前的最新版本 1.0
 * 增加 Intel Wi-Fi（自带的，在BIOS里现禁用掉了）
 * 尝试下看是否有机会升级 Sonoma
 
+## BIOS 设置
 
+|Settings|Value|
+|----|---|
+|System Configuration → Integrated NIC | Enabled |
+|System Configuration → SATA Operation | AHCI |
+|Security → PTT Security/PTT On | Disabled |
+|Secure Boot → Secure Boot Enable | Disabled |
+|Secure Boot → Secure Boot Mode | Audit Mode |
+|Intel SGE → SGX | Disabled |
+|Performance → Intel SpeedStep | Enabled |
+|Performance → C-States Control | Enabled |
+|Performance → Turboost | Enabled |
+|Performance → HyperThread Control | Enabled |
+|Power Management → Intel Speed Shift Technology | Enabled |
+|Power Management → Deep Sleep Control | Disabled |
+|Power Management → USB Wake Support | Disabled |
+|Power Management → Wake on LAN/WLAN | Lan only |
+|Power Management → Block Sleep | Disabled |
+|POST Behavior → Fastboot | Minimal |
+|Virtualization Support → Virtualization | Enabled |
+|Virtualization Support → VT For Direct I/O | Disabled |
+|Advanced configurations → ASPM | Auto |
+
+以上设置引用自： https://github.com/jerryhan77/dell-optiplex-7080mff-opencore
+关于修改DVMT和CFG LOCK 也可以参考上面的链接，我目前只解锁了CFG，DVMT没有动。
 
 ## 黑苹果工具
 * https://dortania.github.io/OpenCore-Install-Guide/
